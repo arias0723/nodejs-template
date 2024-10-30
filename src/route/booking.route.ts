@@ -11,11 +11,11 @@ router.post('/', (_req, res) => {
   res.send('hi')
 })
 
-router.post('/:id', (req, res) => {
+router.post('/:id', (_, res) => {
   res.send('hi')
 })
 
-router.put('/:id', (req, res) => {
+router.put('/:id', (_, res) => {
   return res.sendFile('index.html', { root: './public' })
 })
 
